@@ -1,0 +1,7 @@
+.:
+fccumain.menu
+fccu.menu
+fccu.png
+filelist.txt
+initrd1.img
+vmlinuz1

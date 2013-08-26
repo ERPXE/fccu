@@ -1,0 +1,17 @@
+LABEL FCCUMAIN
+MENU LABEL ^FCCU Live
+KERNEL er/plugins/fccu/vmlinuz1
+INITRD er/plugins/fccu/initrd1.img
+APPEND boot=live netboot=nfs nfsroot=10.0.0.1:/tftpboot/er/shares/fccu/ ramdisk_size=200000 nolock username=fccu hostname=fcculive union=aufs noswap vga=normal keyb=us
+TEXT HELP
+                 FCCU Live.
+ENDTEXT
+
+LABEL FCCUMAINLIVEFAILSAFE
+MENU LABEL ^FCCU Live - Fail Safe
+KERNEL er/plugins/fccu/vmlinuz1
+INITRD er/plugins/fccu/initrd1.img
+APPEND boot=live netboot=nfs nfsroot=10.0.0.1:/tftpboot/er/shares/fccu/ ramdisk_size=200000 nolock username=fccu hostname=fcculive union=aufs noswap vga=normal keyb=us noapic noapm nodma nomce nolapic nosmp
+TEXT HELP
+                 FCCU Live Fail Safe.
+ENDTEXT
