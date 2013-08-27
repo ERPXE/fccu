@@ -1,9 +1,6 @@
 MENU BEGIN FCCUMENU
+MENU TITLE FCCU - Forensic Boot CD
 MENU LABEL ^FCCU - Forensic Boot CD
-# ------====> Include Menu Settings <====------
-MENU INCLUDE er/menuinc/header.module
-
-# ------====> Set Specific Page Settings <====------
 MENU BACKGROUND er/plugins/fccu/fccu.png
 
 MENU INCLUDE er/plugins/fccu/fccumain.menu
